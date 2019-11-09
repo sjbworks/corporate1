@@ -1,0 +1,95 @@
+@charset 'utf-8';
+
+@import './setting/ress';
+@import './setting/config';
+@import './setting/function';
+
+html {
+  font-size: 15px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  word-wrap: break-word;
+  color: #000;
+  font-family: FP-HiraKakuProN-W3,"Hiragino Sans","ヒラギノ角ゴシック","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",YuGothic,"Lucida Grande","メイリオ",Meiryo,Verdana,"ＭＳ Ｐゴシック",sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  // font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+#disp-container {
+  padding-right: 40px;
+  padding-left: 15%;
+  max-width: 100%;
+  padding-top: 80px;
+  min-width: 320px;
+}
+
+#header {
+  position: fixed;
+  width: 15%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.header-inner {
+  height: 100%;
+}
+
+.header-inner-rotate {
+  min-width: 100vh;
+  left: 50px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.header-title {
+  width: 17vw;
+  max-width: 300px;
+}
+
+.header-sub-title {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.main-visual {
+  max-width: 100%;
+}
+
+.main-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-card {
+  margin-right: 3%;
+  margin-top: 5vw;
+  width: 45%;
+}
+
+.main-imageframe img{
+  width: 60vh;
+  height: 60vh;
+  object-fit: cover;
+  border: 0;
+  max-width: 100%;
+}
+
+.main-card-content .title {
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.main-card-content .txt {
+  
+}

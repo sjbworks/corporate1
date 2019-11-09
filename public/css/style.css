@@ -1,0 +1,210 @@
+/*!
+ * ress.css • v1.2.2
+ * MIT License
+ * github.com/filipelinhares/ress
+ */html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}*, ::before, ::after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}::before, ::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}* {
+  margin: 0;
+  padding: 0;
+}audio:not([controls]) {
+  display: none;
+  height: 0;
+}hr {
+  overflow: visible;
+}article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}summary {
+  display: list-item;
+}small {
+  font-size: 80%;
+}[hidden], template {
+  display: none;
+}abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}a {
+  background-color: transparent;
+
+  -webkit-text-decoration-skip: objects;
+}a:active, a:hover {
+  outline-width: 0;
+}code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}b, strong {
+  font-weight: bolder;
+}dfn {
+  font-style: italic;
+}mark {
+  background-color: #ff0;
+  color: #000;
+}sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}sub {
+  bottom: -0.25em;
+}sup {
+  top: -0.5em;
+}input {
+  border-radius: 0;
+}button, [type='button'], [type='reset'], [type='submit'], [role='button'] {
+  cursor: pointer;
+}[disabled] {
+  cursor: default;
+}[type='number'] {
+  width: auto;
+}[type='search'] {
+  -webkit-appearance: textfield;
+}[type='search']::-webkit-search-cancel-button, [type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}textarea {
+  resize: vertical;
+  overflow: auto;
+}button, input, optgroup, select, textarea {
+  font: inherit;
+}optgroup {
+  font-weight: bold;
+}button {
+  overflow: visible;
+}button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: 0;
+}button:-moz-focusring, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
+  outline: 1px dotted ButtonText;
+}button, html [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: button;
+}button, select {
+  text-transform: none;
+}button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}select::-ms-expand {
+  display: none;
+}select::-ms-value {
+  color: currentColor;
+}legend {
+  display: table;
+  max-width: 100%;
+  border: 0;
+  color: inherit;
+  white-space: normal;
+}::-webkit-file-upload-button {
+  font: inherit;
+
+  -webkit-appearance: button;
+}[type='search'] {
+  outline-offset: -2px;
+
+  -webkit-appearance: textfield;
+}img {
+  border-style: none;
+}progress {
+  vertical-align: baseline;
+}svg:not(:root) {
+  overflow: hidden;
+}audio, canvas, progress, video {
+  display: inline-block;
+}@media screen {
+  [hidden~='screen'] {
+    display: inherit;
+  }[hidden~='screen']:not(:active):not(:focus):not(:target) {
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+  }
+}[aria-busy='true'] {
+  cursor: progress;
+}[aria-controls] {
+  cursor: pointer;
+}[aria-disabled] {
+  cursor: default;
+}::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}html {
+  font-size: 15px;
+}body {
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #000;
+  font-family: FP-HiraKakuProN-W3,'Hiragino Sans','ヒラギノ角ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Lucida Grande','メイリオ',Meiryo,Verdana,'ＭＳ Ｐゴシック',sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+}#disp-container {
+  max-width: 100%;
+  min-width: 320px;
+  padding-left: 15%;
+  padding-right: 40px;
+  padding-top: 80px;
+}#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 15%;
+}.header-inner {
+  height: 100%;
+}.header-inner-rotate {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  display: -webkit-box;
+  display: flex;
+  min-width: 100vh;
+  align-items: flex-end;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+
+  -webkit-box-align: end;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+}.header-title {
+  width: 17vw;
+  max-width: 300px;
+}.header-sub-title {
+  -webkit-margin-after: 1em;
+  -webkit-margin-before: 1em;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}.main-visual {
+  max-width: 100%;
+}.main-contents {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}.main-card {
+  width: 45%;
+  margin-right: 3%;
+  margin-top: 5vw;
+}.main-imageframe img {
+  height: 60vh;
+  width: 60vh;
+  max-width: 100%;
+  border: 0;
+
+  -o-object-fit: cover;
+  object-fit: cover;
+}.main-card-content .title {
+  font-family: 'ヒラギノ明朝 ProN W6', 'HiraMinProN-W6', 'HG明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS 明朝', serif;
+}
