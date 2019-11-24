@@ -1,8 +1,7 @@
 @charset 'utf-8';
 
 @import './setting/ress';
-@import './setting/config';
-@import './setting/function';
+@import './setting/mediaquery';
 
 html {
   font-size: 15px;
@@ -17,8 +16,13 @@ body {
   font-weight: 300;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
-  // font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 #disp-container {
@@ -27,6 +31,9 @@ body {
   max-width: 100%;
   padding-top: 80px;
   min-width: 320px;
+  @include max(md){
+    padding-right: 0;
+  }
 }
 
 #header {
@@ -50,21 +57,128 @@ body {
   transform: rotate(90deg);
   transform-origin: bottom left;
   -webkit-box-align: end;
-  align-items: flex-end;
+  // align-items: flex-end;
+  @include max(md){
+    left: 0;
+  }
 }
 
 .header-title {
   width: 17vw;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   max-width: 300px;
 }
 
 .header-sub-title {
+  margin-left: 7vw;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
+#nav {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: #d3d3d3;
+  transition: all .3s;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.nav-inner {
+  display: flex;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+
+.nav-title {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+}
+
+.nav-hamburger {
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 300;
+}
+
+.nav-hamburger-line {
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 1px;
+  background-color: #111;
+  transition: all .6s;
+}
+
+.hamburger-line-1 {
+  top: 14px;
+}
+
+.hamburger-line-2 {
+  top: 24px;
+}
+
+.hamburger-line-3 {
+  top: 34px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list-item {
+  text-align: left;
+  padding: 5px 14px;
+}
+
+/* 表示された時用のCSS */
+.nav-open #nav {
+  right: 0;
+}
+
+.nav-open .hamburger-line-1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger-line-2 {
+  width: 0;
+  left: 80%;
+}
+.nav-open .hamburger-line-3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
 .main-visual {
-  max-width: 100%;
+  width: 100%;
+  @include max(md){
+    display: none;
+  }
+}
+
+.main-visual-mobile {
+  width: 100%;
+  display: none;
+  @include max(md){
+    display: block;
+  }
 }
 
 .main-contents {
@@ -90,8 +204,4 @@ body {
   font-family: ten-mincho, serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.main-card-content .txt {
-  
 }

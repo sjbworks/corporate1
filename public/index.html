@@ -11,9 +11,7 @@
     <meta property="og:locale" content="jp_JP">
     <meta property="og:site_name" content="サイト名">
     <meta property="og:url" content="/">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home/style.css">
   </head>
   <body>
     <div id="disp-container">
@@ -26,9 +24,21 @@
         </div>
       </header>
       <!-- end of header-->
+      <div class="nav-inner"><span class="nav-title">MENU</span>
+        <div class="nav-hamburger" id="nav-hamburger"><span class="nav-hamburger-line hamburger-line-1"></span><span class="nav-hamburger-line hamburger-line-2"></span><span class="nav-hamburger-line hamburger-line-3"></span></div>
+        <nav id="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item"> <a href="">自分の街を愛する全ての人へ</a></li>
+            <li class="nav-list-item"> <a href="">私たちの理念</a></li>
+            <li class="nav-list-item"> <a href="">社会的価値の高い事業</a></li>
+            <li class="nav-list-item"> <a href="">私たちの歩み</a></li>
+          </ul>
+        </nav>
+      </div>
       <!-- main contents-->
       <div id="main">
         <div class="main-visual"><img src="/img/top.jpg"></div>
+        <div class="main-visual-mobile"><img src="/img/top_sm.jpg"></div>
         <div class="main-contents">
           <article class="main-card"><a href="/target/">
               <div class="main-imageframe"><img src="/img/foryou.jpg"></div></a>
@@ -67,7 +77,6 @@
       <!-- /footer-->
       <script src="/js/plugins.js"></script>
       <script src="/js/main.js"></script>
-      <script src="/js/home.js"></script>
     </div>
   </body>
 </html>

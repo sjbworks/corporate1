@@ -25,13 +25,11 @@ if page.og.siteName !== ''
 if page.og.url !== ''
 	meta(property="og:url" content=page.og.url)
 
-if page.favicon !== ''
-	link(rel="icon" type="image/vnd.microsoft.icon" href=page.favicon)
+//- 後で設定
+//- if page.favicon !== ''
+//- 	link(rel="icon" type="image/vnd.microsoft.icon" href=page.favicon)
 
 link(rel="stylesheet" href=ROOT_PATH+"css/style.css")
 
-if page.name == 'home'
-	link(rel="stylesheet" href=ROOT_PATH+"css/home/style.css")
-
-if page.name == 'page'
-	link(rel="stylesheet" href=ROOT_PATH+"css/page/style.css")
+//- if page.name == 'page'
+//- 	link(rel="stylesheet" href=ROOT_PATH+"css/style.css")
