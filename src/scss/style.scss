@@ -26,7 +26,7 @@ img {
 }
 
 #disp-container {
-  padding-right: 40px;
+  padding-right: 70px;
   padding-left: 15%;
   max-width: 100%;
   padding-top: 80px;
@@ -204,4 +204,92 @@ img {
   font-family: ten-mincho, serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.bottom {
+  padding-top: 2.5em;
+  border-top: 1px solid #d8d8d8;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.bottom li {
+  margin-right: 2.5em;
+}
+
+/* サブ画面 */
+.child-main-visual {
+  width: 100%;
+  @include max(md){
+    display: none;
+  }
+}
+
+.child-main-visual-mobile {
+  width: 100%;
+  display: none;
+  @include max(md){
+    display: block;
+  }
+}
+
+.child-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child-main-card {
+  margin-right: 3%;
+  margin-top: 5vw;
+  width: 100%;
+}
+
+.child-main-card-sentence {
+  display: inline-block;
+}
+
+.child-main-card-sentence .title{
+  font-family: ten-mincho, serif;
+  font-weight: 500;
+}
+
+.child-main-imageframe1,
+.child-main-imageframe2 {
+  display: inline-block;
+  width: 40%;
+}
+
+.child-main-imageframe1 img,
+.child-main-imageframe2 img {
+  width: 60vh;
+  height: 60vh;
+  object-fit: cover;
+  border: 0;
+  max-width: 100%;
+}
+
+.child-main-imageframe1 {
+  margin-right: 3vw;
+}
+
+.child-main-imageframe2 {
+  margin-left: 3vw;
+}
+
+.child-main-card-content .title {
+  font-family: ten-mincho, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.child-main-card-content {
+  display: inline-block;
+  width: 40vw;
+  min-width: 250px;
 }
