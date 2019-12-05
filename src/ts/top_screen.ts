@@ -2,7 +2,7 @@ export default class TopScreen {
 	breakPoint: number;
 	minWidth: number;
 
-	constructor(breakPoint,minWidth){
+	constructor(breakPoint,minWidth) {
 		this.breakPoint = breakPoint;
 		this.minWidth = minWidth;
 	}
@@ -41,10 +41,8 @@ export default class TopScreen {
 	toggleNav() :void {
 		const body = document.body;
 		const hamburger = document.getElementById('nav-hamburger');	
-		console.log(hamburger);
-		hamburger.addEventListener('click', ()=> {
+		hamburger.addEventListener('click', () => {
 			body.classList.toggle('nav-open');
 		});
 	}
-
 }

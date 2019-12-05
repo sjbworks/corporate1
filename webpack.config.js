@@ -12,7 +12,7 @@ const convertExtensions = {
   scss: 'css',
   ts: 'js'
 };
-const mode = 'production'; //development:開発, production:本番
+const mode = 'production';
 const entry = {
   pug: {},
   scss: {},

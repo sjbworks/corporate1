@@ -91,6 +91,7 @@ img {
 
 .nav-inner {
   display: flex;
+  flex-wrap: wrap;
   position: fixed;
   right: 20px;
   top: 10px;
@@ -105,7 +106,7 @@ img {
 }
 
 .nav-hamburger {
-  top: 0;
+  top: 10px;
   right: 0;
   cursor: pointer;
   margin-left: 20px;
@@ -114,6 +115,12 @@ img {
   line-height: 60px;
   text-align: center;
   z-index: 300;
+}
+
+.nav-scroll {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .nav-hamburger-line {
@@ -126,26 +133,28 @@ img {
 }
 
 .hamburger-line-1 {
-  top: 14px;
+  top: 30%;
 }
 
 .hamburger-line-2 {
-  top: 24px;
+  top: 50%;
 }
 
 .hamburger-line-3 {
-  top: 34px;
+  top: 70%;
 }
 
 .nav-list {
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
   list-style: none;
 }
 
 .nav-list-item {
   text-align: left;
   padding: 5px 14px;
+  font-family: ten-mincho, serif;
+  font-weight: 200;
 }
 
 /* 表示された時用のCSS */
@@ -155,7 +164,7 @@ img {
 
 .nav-open .hamburger-line-1 {
   transform: rotate(45deg);
-  top: 20px;
+  top: 50%;
 }
 .nav-open .hamburger-line-2 {
   width: 0;
@@ -163,7 +172,7 @@ img {
 }
 .nav-open .hamburger-line-3 {
   transform: rotate(-45deg);
-  top: 20px;
+  top: 50%;
 }
 
 .main-visual {
